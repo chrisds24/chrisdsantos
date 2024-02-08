@@ -11,6 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
+// import Typography from '@mui/material/Typography';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Projects', 'Experience', 'Resume'];
@@ -39,13 +40,13 @@ function DrawerAppBar() {
             maxWidth: { xs: 350, md: 250 },
         }}
         alt="Letter c image"
-        src="c-image.png"
+        src="c-image-white.png"
       />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} sx={{ color: 'white' }} />
+              <ListItemText primary={item} sx={{ color: '#ffffff' }} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -61,7 +62,7 @@ function DrawerAppBar() {
       <AppBar
         component="nav"
         sx={{
-            backgroundColor: '#000000',
+            backgroundColor: '#00274e',
             paddingBottom: 1,
             paddingTop: 1
         }}
@@ -74,11 +75,11 @@ function DrawerAppBar() {
                 width: 64,
             }}
             alt="Letter c image"
-            src="c-image.png"
+            src="c-image-white.png"
           />
           <Box sx={{ display: { xs: 'none', sm: 'block' }, marginLeft: 'auto' }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: 'white' }}>
+              <Button key={item} sx={{ color: '#ffffff' }}>
                 {item}
               </Button>
             ))}
@@ -110,7 +111,7 @@ function DrawerAppBar() {
           anchor='right'
           PaperProps={{
             sx: {
-              backgroundColor: "#161616",
+              backgroundColor: "#00274e",
             }
           }}
         >
