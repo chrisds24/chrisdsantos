@@ -36,7 +36,7 @@ function Home() {
       <Avatar
         alt="Christian Delos Santos"
         src="linkedin_photo.jpeg"
-        sx={{ width: 300, height: 300, display: { lg: 'none' } }}
+        sx={{ width: 300, height: 300, display: { xs: 'none', sm: 'block' } }}
       />
     </Box>
   );
