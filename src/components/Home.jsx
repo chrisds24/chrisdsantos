@@ -11,6 +11,7 @@ function Home() {
         width: '100vw',
         p: 7,
         backgroundColor: '#00274e',
+        // backgroundColor: "#3b9dff",
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',

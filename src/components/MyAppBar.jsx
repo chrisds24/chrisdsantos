@@ -14,7 +14,7 @@ import Button from '@mui/material/Button';
 // import Typography from '@mui/material/Typography';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Projects', 'Experience', 'Resume'];
+const navItems = ['Home', 'About', 'Projects', 'Experience', 'Contact'];
 
 function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -91,7 +91,12 @@ function DrawerAppBar() {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' }, marginLeft: 'auto' }}
           >
-            <MenuIcon />
+            <MenuIcon
+            sx={{
+                height: 48,
+                width: 48
+            }}
+            />
           </IconButton>
         </Toolbar>
       </AppBar>
