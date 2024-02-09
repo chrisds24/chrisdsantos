@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 
-import { Box, CssBaseline, Toolbar } from '@mui/material';
+import { Box, CssBaseline } from '@mui/material';
 import MyAppBar from './components/MyAppBar';
 import Home from './components/Home';
 import About from './components/About';
