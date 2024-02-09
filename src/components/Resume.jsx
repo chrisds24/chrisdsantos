@@ -21,9 +21,9 @@ function Resume() {
       </Typography>
       <Box
         sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between'
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between'
         }}
       >
         <Typography variant="h4" gutterBottom color='#000000' fontWeight={'bold'} sx={{paddingRight: 7}}>

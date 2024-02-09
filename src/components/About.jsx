@@ -11,6 +11,7 @@ import { Button } from '@mui/material';
 
 import AboutMe from './AboutMe';
 import Resume from './Resume';
+import Skills from './Skills';
 
 function About() {
   return (
@@ -26,6 +27,7 @@ function About() {
     >
       <AboutMe />
       <Resume />
+      <Skills />
     </Box>
   );
 }
