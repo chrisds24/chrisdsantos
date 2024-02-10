@@ -50,7 +50,6 @@ function Skills() {
   return (
     <Box
       sx={{
-        p: 7,
         display: 'flex',
         flexDirection: {xs: 'column' , md: 'row'},
       }}
@@ -58,15 +57,15 @@ function Skills() {
       {/*
         JavaScript, TypeScript, HTML, CSS
       */}
-      <Typography variant="h4" gutterBottom color='#00274e' fontWeight='bold' sx={{textDecoration: 'underline', paddingRight: 7}}>
+      <Typography variant="h4" gutterBottom color='#00274e' fontWeight='bold' sx={{textDecoration: 'underline', paddingRight: '9vw'}}>
         Skills
       </Typography>
       <Grid container direction='column'>
         <Grid paddingBottom={'5vh'} container direction='column'>
-          <Typography variant="h4" gutterBottom color='#000000' fontWeight={'bold'} sx={{paddingRight: 7}}>
+          <Typography variant="h4" gutterBottom color='#000000' fontWeight={'bold'} sx={{paddingBottom: 1}}>
             Languages
           </Typography>
-          <Grid rowSpacing={2} columnSpacing={3} container direction='row'>
+          <Grid rowSpacing={2} columnSpacing={4} container direction='row'>
             {languages.map((language, idx) => (
               <Grid item key={idx}>
                 <Box sx={{display: 'flex', flexDirection: 'column'}} >
@@ -78,10 +77,10 @@ function Skills() {
           </Grid>
         </Grid>
         <Grid paddingBottom={'5vh'} container direction='column'>
-          <Typography variant="h4" gutterBottom color='#000000' fontWeight={'bold'} sx={{paddingRight: 7}}>
-            Frameworks/Libraries
+          <Typography variant="h4" gutterBottom color='#000000' fontWeight={'bold'} sx={{paddingBottom: 1}}>
+            Frameworks / Libraries
           </Typography>
-          <Grid rowSpacing={2} columnSpacing={3} container direction='row'>
+          <Grid rowSpacing={2} columnSpacing={4} container direction='row'>
             {frameworks.map((framework, idx) => (
               <Grid item key={idx}>
                 <Box sx={{display: 'flex', flexDirection: 'column'}} >
@@ -93,10 +92,10 @@ function Skills() {
           </Grid>
         </Grid>
         <Grid container direction='column'>
-          <Typography variant="h4" gutterBottom color='#000000' fontWeight={'bold'} sx={{paddingRight: 7}}>
-            Tools/Technologies
+          <Typography variant="h4" gutterBottom color='#000000' fontWeight={'bold'} sx={{paddingBottom: 1}}>
+            Tools / Technologies
           </Typography>
-          <Grid rowSpacing={2} columnSpacing={3} container direction='row'>
+          <Grid rowSpacing={2} columnSpacing={4} container direction='row'>
             {tools.map((tool, idx) => (
               <Grid item key={idx}>
                 <Box sx={{display: 'flex', flexDirection: 'column'}} >
@@ -107,9 +106,7 @@ function Skills() {
             ))}
           </Grid>
         </Grid>
-
       </Grid>      
-
     </Box>    
   );
 }

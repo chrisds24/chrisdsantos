@@ -11,7 +11,7 @@ function App() {
     <Box sx={{display: 'flex', height:"100vh", backgroundColor: "#3b9dff"}}>
       <CssBaseline />
       <MyAppBar />
-      <Box sx={{ paddingTop: 10 }}>
+      <Box>
         <Home />
         <About />
       </Box>

@@ -18,7 +18,7 @@ function About() {
     <Box
       sx={{
         width: '100vw',
-        p: 7,
+        padding: '7vh 7vw 7vh 7vw',
         backgroundColor: "#3b9dff",
         display: 'flex',
         flexDirection: 'column',

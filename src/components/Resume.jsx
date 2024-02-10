@@ -11,12 +11,12 @@ function Resume() {
   return (
     <Box
       sx={{
-        p: 7,
         display: 'flex',
         flexDirection: {xs: 'column' , md: 'row'},
+        paddingBottom: '7vh'
       }}
     >
-      <Typography variant="h4" gutterBottom color='#00274e' fontWeight='bold' sx={{textDecoration: 'underline', paddingRight: 7}}>
+      <Typography variant="h4" gutterBottom color='#00274e' fontWeight='bold' sx={{textDecoration: 'underline', paddingRight: '6vw'}}>
         Resume
       </Typography>
       <Box
@@ -26,7 +26,7 @@ function Resume() {
           justifyContent: 'space-between'
         }}
       >
-        <Typography variant="h4" gutterBottom color='#000000' fontWeight={'bold'} sx={{paddingRight: 7}}>
+        <Typography variant="h4" gutterBottom color='#000000' fontWeight={'bold'}>
           Please click below to open or download.
         </Typography>
         <Box
