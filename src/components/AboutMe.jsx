@@ -29,7 +29,7 @@ function AboutMe() {
           {aboutMeItems.map((item) => (
             <ListItem>
                 <ListItemIcon>
-                <BugReportIcon sx={{ color: '#ffffff' }} />
+                  <BugReportIcon sx={{ color: '#ffffff' }} />
                 </ListItemIcon>
                 <ListItemText
                 primary={`${item}`}
