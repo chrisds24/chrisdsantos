@@ -3,7 +3,6 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { Typography } from '@mui/material';
 import { Grid } from '@mui/material';
-// import { Item } from '@mui/material';
 
 const languages = [
   { name: 'JavaScript', source: 'javascript.png' },

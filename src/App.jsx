@@ -5,6 +5,7 @@ import { Box, CssBaseline } from '@mui/material';
 import MyAppBar from './components/MyAppBar';
 import Home from './components/Home';
 import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Box>
         <Home />
         <About />
+        <Projects />
       </Box>
     </Box>
   );
