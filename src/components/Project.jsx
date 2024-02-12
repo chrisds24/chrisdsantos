@@ -13,7 +13,7 @@ import { Grid } from '@mui/material';
 function Project(props) {
   return (
     <Paper
-      sx={{backgroundColor: '#3b9dff', marginBottom: '7vh', width: '90vw', padding: '2vh 1vw 2vh 1vw'}}
+      sx={{backgroundColor: '#004181', marginBottom: '7vh', width: '90vw', padding: '2vh 1vw 2vh 1vw'}}
       elevation={6}
     >
       <Box
@@ -21,24 +21,29 @@ function Project(props) {
           display: 'flex',
           flexDirection: {xs: 'column' , md: 'row'}
         }}
-      >
-        <img src={props.imgSource} alt={'NgRx'} style={{ height: '40vh', objectFit:'contain'}} />
+      >  
+        <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+          <img src={props.imgSource} alt={'NgRx'} style={{ height: '50vh', objectFit:'contain'}} />
+        </Box>
         <Card
           elevation={0}
         >
+          {/* 
+            In https://www.colorhexa.com/00274e, #004181 is a brighter monochromatic color
+           */}
           <CardContent
             sx={{
               display: 'flex',
               flexDirection: 'column',
-              backgroundColor: '#3b9dff',
+              backgroundColor: '#004181',
               padding: {md: '0vh 0vw 0vh 0vw'},
               '&:last-child': {paddingBottom: 0}
             }}
           > 
-            <Typography variant="string" color='#00274e' fontWeight='bold' sx={{textDecoration: 'underline', fontSize: '22px'}} textAlign={'center'}>
+            <Typography variant="string" color='#ffffff' fontWeight='bold' sx={{fontSize: '23px'}} textAlign={'center'}>
               {props.name}
             </Typography>
-            <Typography variant="string" color='#00274e' fontWeight='bold' sx={{fontSize: '18px', paddingLeft: '2vw'}}>
+            <Typography variant="string" color='#62b1ff' fontWeight='bold' sx={{fontSize: '18px', paddingLeft: '2vw'}}>
               {props.description}
             </Typography>
             <List
@@ -52,14 +57,14 @@ function Project(props) {
                   sx={{padding: '0.6vh 2vw'}}
                 >
                   <ListItemIcon>
-                    <CodeIcon sx={{ color: '#ffffff' }} />
+                    <CodeIcon sx={{ color: '#000000' }} />
                   </ListItemIcon>
                   <ListItemText
                     primary={`${note}`}
                     primaryTypographyProps={{
                       fontSize: '17px',
-                      color: '#000000',
-                      fontWeight: 'bold'
+                      color: '#ffffff',
+                    //   fontWeight: 'bold'
                     }} 
                   />
                 </ListItem>
