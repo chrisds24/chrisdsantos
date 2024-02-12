@@ -5,18 +5,41 @@ import { Stack } from '@mui/material';
 import { Typography } from '@mui/material';
 import Project from './Project';
 
-const proj1Description = 'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere, fugit, molestiae ab.';
 
-const proj1Notes = [
-  'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere, fugit, molestiae ab officiis illo voluptates recusandae.',
-  'hello',
-  'world',
-  'i need a job, seriously',
-  'how do these look like in the box?',
-  'askdhaskdhaskjdhaskjdhakdhaksjdhaskdhafcdhjsvgcyeafjahdsbcajhdvbakwdvagdgakgakjhsdaskjdhakjsdgajshdgajhsd'
-];
+const slugSell = {
+  name: 'SlugSell',
+  description: 'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere, fugit, molestiae ab.',
+  details: [
+    'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere, fugit, molestiae ab officiis illo voluptates recusandae.',
+    'hello',
+    'world',
+    'i need a job, seriously',
+    'how do these look like in the box?',
+    'askdhask dhaskjdh askjd hakdhaks jdhaskdhaf cdh jsv gcyeaf jahdsb cajhdvbak wdva gdgakga kjhsdas kjd hak jsd gajs hdga jhsd'
+  ],
+  imgSource: 'render.svg',
+  github: 'https://github.com/chrisds24/SlugSell',
+  live: 'https://slugsell-webapp.onrender.com',
+  stack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeGraphQL', 'Node.js', 'Express', 'PostgreSQL']
+};
 
-const proj1Stack = ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeGraphQL', 'Node.js', 'Express', 'PostgreSQL'];
+const slugScheduler = {
+  name: 'SlugScheduler',
+  description: 'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta',
+  details: [
+    'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere',
+    'hello fugit, molestiae ab officiis illo voluptates recusandae.',
+    'world jsv gcyeaf jahdsb cajhdvbak wdva gdgakga kjhsdas',
+    'i need a job, seriously',
+    'how do these look like in the box?',
+    'askdhask dhaskjdh askjd hakdhaks jdhaskdhaf cdh  kjd hak jsd gajs hdga jhsd'
+  ],
+  imgSource: 'ngrx.svg',
+  github: 'https://github.com/chrisds24/SlugScheduler',
+  stack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeGraphQL', 'Node.js', 'Express', 'PostgreSQL']
+};
+
+const projects = [slugSell, slugScheduler];
 
 function Projects() {
   return (
@@ -34,8 +57,10 @@ function Projects() {
       <Typography variant="h4" gutterBottom color='#ffffff' fontWeight='bold' sx={{textDecoration: 'underline', paddingBottom: '4vh'}}>
         Projects
       </Typography>
-      <Stack spacing={2}>
-        <Project imgSource={'render.svg'} name={'SlugSell'} description={proj1Description} notes={proj1Notes} stack={proj1Stack} />
+      <Stack spacing={'4vh'}>
+        {projects.map((proj) => (
+          <Project project={proj} />
+        ))}
       </Stack>
     </Box>
   );

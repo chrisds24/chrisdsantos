@@ -9,6 +9,10 @@ import { Typography } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
 import { Chip } from '@mui/material';
 import { Grid } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import { Button, ButtonGroup } from '@mui/material';
+import { Link } from '@mui/material';
 
 function Project(props) {
   return (
@@ -23,7 +27,21 @@ function Project(props) {
         }}
       >  
         <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-          <img src={props.imgSource} alt={'NgRx'} style={{ height: '50vh', objectFit:'contain'}} />
+          <img src={props.project.imgSource} alt={'NgRx'} style={{ height: '40vh', objectFit:'contain'}} />
+          <ButtonGroup disableElevation variant="contained" aria-label="Github and live links" sx={{justifyContent: 'center'}}>
+              <Link href={props.project.github} rel="noopener noreferrer" target="_blank">
+                <Button variant="contained" sx={{ color: '#ffffff', backgroundColor: props.project.github ? '#3b9dff': '#808080', height: '35px', marginTop: '10px' }}>
+                  <GitHubIcon sx={{ color: '#ffffff', width: 30, height: 30, paddingRight: 1}} />
+                  {props.project.github ? 'GitHub' : 'Unavailable'}
+                </Button>
+              </Link> 
+              <Link href={props.project.live} rel="noopener noreferrer" target="_blank">
+                <Button variant="contained" sx={{ color: '#ffffff', backgroundColor: props.project.live ? '#3b9dff': '#808080', height: '35px', marginTop: '10px' }}>
+                  <VisibilityIcon sx={{ color: '#ffffff', width: 30, height: 30, paddingRight: 1}} />
+                  {props.project.live ? 'Live' : 'Unavailable'}
+                </Button>
+              </Link>   
+          </ButtonGroup>
         </Box>
         <Card
           elevation={0}
@@ -39,12 +57,12 @@ function Project(props) {
               padding: {md: '0vh 0vw 0vh 0vw'},
               '&:last-child': {paddingBottom: 0}
             }}
-          > 
+          >
             <Typography variant="string" color='#ffffff' fontWeight='bold' sx={{fontSize: '23px'}} textAlign={'center'}>
-              {props.name}
+              {props.project.name}
             </Typography>
             <Typography variant="string" color='#62b1ff' fontWeight='bold' sx={{fontSize: '18px', paddingLeft: '2vw'}}>
-              {props.description}
+              {props.project.description}
             </Typography>
             <List
               sx={{
@@ -52,7 +70,7 @@ function Project(props) {
                 margin: '0'
               }}
             >
-              {props.notes.map((note) => (
+              {props.project.details.map((detail) => (
                 <ListItem
                   sx={{padding: '0.6vh 2vw'}}
                 >
@@ -60,7 +78,7 @@ function Project(props) {
                     <CodeIcon sx={{ color: '#000000' }} />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`${note}`}
+                    primary={`${detail}`}
                     primaryTypographyProps={{
                       fontSize: '17px',
                       color: '#ffffff',
@@ -71,7 +89,7 @@ function Project(props) {
               ))}
             </List>
             <Grid rowSpacing={1} columnSpacing={1} container direction='row' sx={{paddingLeft: '2vw', paddingTop: '12px'}}>
-              {props.stack.map((tech, idx) => (
+              {props.project.stack.map((tech, idx) => (
                 <Grid item key={idx}>
                   <Chip label={tech} sx={{backgroundColor: '#00274e', color: '#ffffff'}} />
                 </Grid>
