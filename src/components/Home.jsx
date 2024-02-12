@@ -24,10 +24,10 @@ function Home() {
           flexDirection: 'column'
         }}
       >
-        <Typography variant="h2" gutterBottom color="#3b9dff" fontWeight='bold'>
+        <Typography variant="h2" gutterBottom color="#ffffff" fontWeight='bold'>
             Christian Delos Santos
         </Typography>
-        <Typography variant="h4" gutterBottom color="#ffffff" fontWeight='bold'>
+        <Typography variant="h4" gutterBottom color="#3b9dff" fontWeight='bold'>
           Full-stack Developer
         </Typography>   
         <Typography variant="h6" gutterBottom color="#ffffff">

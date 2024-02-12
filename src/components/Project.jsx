@@ -38,7 +38,7 @@ function Project(props) {
             <Typography variant="string" color='#00274e' fontWeight='bold' sx={{textDecoration: 'underline', fontSize: '22px'}} textAlign={'center'}>
               {props.name}
             </Typography>
-            <Typography variant="string" color='#00274e' fontWeight='bold' sx={{fontSize: '19px', paddingLeft: '2vw'}}>
+            <Typography variant="string" color='#00274e' fontWeight='bold' sx={{fontSize: '18px', paddingLeft: '2vw'}}>
               {props.description}
             </Typography>
             <List

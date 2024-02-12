@@ -31,7 +31,7 @@ function Projects() {
         alignItems: 'center'
       }}
     >
-      <Typography variant="h4" gutterBottom color='#3b9dff' fontWeight='bold' sx={{textDecoration: 'underline', paddingBottom: '4vh'}}>
+      <Typography variant="h4" gutterBottom color='#ffffff' fontWeight='bold' sx={{textDecoration: 'underline', paddingBottom: '4vh'}}>
         Projects
       </Typography>
       <Stack spacing={2}>
