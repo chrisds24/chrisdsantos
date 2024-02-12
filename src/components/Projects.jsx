@@ -5,6 +5,8 @@ import { Stack } from '@mui/material';
 import { Typography } from '@mui/material';
 import Project from './Project';
 
+const proj1Description = 'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere, fugit, molestiae ab.';
+
 const proj1Notes = [
   'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere, fugit, molestiae ab officiis illo voluptates recusandae.',
   'hello',
@@ -33,7 +35,7 @@ function Projects() {
         Projects
       </Typography>
       <Stack spacing={2}>
-        <Project imgSource={'render.svg'} name={'SlugSell'} description={'SlugSell description'} notes={proj1Notes} stack={proj1Stack} />
+        <Project imgSource={'render.svg'} name={'SlugSell'} description={proj1Description} notes={proj1Notes} stack={proj1Stack} />
       </Stack>
     </Box>
   );

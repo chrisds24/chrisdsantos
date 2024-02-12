@@ -38,7 +38,7 @@ function Project(props) {
             <Typography variant="string" color='#00274e' fontWeight='bold' sx={{textDecoration: 'underline', fontSize: '22px'}} textAlign={'center'}>
               {props.name}
             </Typography>
-            <Typography variant="string" color='#00274e' fontWeight='bold' sx={{fontSize: '20px'}} textAlign={'center'}>
+            <Typography variant="string" color='#00274e' fontWeight='bold' sx={{fontSize: '19px', paddingLeft: '2vw'}}>
               {props.description}
             </Typography>
             <List
@@ -57,7 +57,7 @@ function Project(props) {
                   <ListItemText
                     primary={`${note}`}
                     primaryTypographyProps={{
-                      fontSize: '18px',
+                      fontSize: '17px',
                       color: '#000000',
                       fontWeight: 'bold'
                     }} 
@@ -65,7 +65,7 @@ function Project(props) {
                 </ListItem>
               ))}
             </List>
-            <Grid rowSpacing={1} columnSpacing={1} container direction='row' sx={{paddingTop: '12px'}}>
+            <Grid rowSpacing={1} columnSpacing={1} container direction='row' sx={{paddingLeft: '2vw', paddingTop: '12px'}}>
               {props.stack.map((tech, idx) => (
                 <Grid item key={idx}>
                   <Chip label={tech} sx={{backgroundColor: '#00274e', color: '#ffffff'}} />

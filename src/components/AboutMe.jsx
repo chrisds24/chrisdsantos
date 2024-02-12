@@ -34,7 +34,7 @@ function AboutMe() {
                 <ListItemText
                 primary={`${item}`}
                 primaryTypographyProps={{
-                    fontSize: '18px',
+                    fontSize: '17px',
                     color: '#000000',
                     fontWeight: 'bold'
                 }} 
