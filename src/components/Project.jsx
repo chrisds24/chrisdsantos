@@ -30,13 +30,31 @@ function Project(props) {
           <img src={props.project.imgSource} alt={'NgRx'} style={{ height: '40vh', objectFit:'contain'}} />
           <ButtonGroup disableElevation variant="contained" aria-label="Github and live links" sx={{justifyContent: 'center'}}>
               <Link href={props.project.github} rel="noopener noreferrer" target="_blank">
-                <Button variant="contained" sx={{ color: '#ffffff', backgroundColor: props.project.github ? '#3b9dff': '#808080', height: '35px', marginTop: '10px' }}>
+                <Button
+                  variant="contained"
+                  sx={{
+                    color: '#ffffff',
+                    backgroundColor: props.project.github ? '#3b9dff': '#808080',
+                    // "&:hover": props.project.github ? '#0000ff': '#808080',
+                    height: '35px',
+                    marginTop: '10px'
+                  }}
+                >
                   <GitHubIcon sx={{ color: '#ffffff', width: 30, height: 30, paddingRight: 1}} />
                   {props.project.github ? 'GitHub' : 'Unavailable'}
                 </Button>
               </Link> 
               <Link href={props.project.live} rel="noopener noreferrer" target="_blank">
-                <Button variant="contained" sx={{ color: '#ffffff', backgroundColor: props.project.live ? '#3b9dff': '#808080', height: '35px', marginTop: '10px' }}>
+                <Button
+                  variant="contained"
+                  sx={{
+                    color: '#ffffff',
+                    backgroundColor: props.project.live ? '#3b9dff': '#808080',
+                    // "&:hover": props.project.github ? '#0000ff': '#808080',
+                    height: '35px',
+                    marginTop: '10px'
+                  }}
+                >
                   <VisibilityIcon sx={{ color: '#ffffff', width: 30, height: 30, paddingRight: 1}} />
                   {props.project.live ? 'Live' : 'Unavailable'}
                 </Button>
@@ -45,6 +63,7 @@ function Project(props) {
         </Box>
         <Card
           elevation={0}
+          square={true}
         >
           {/* 
             In https://www.colorhexa.com/00274e, #004181 is a brighter monochromatic color
