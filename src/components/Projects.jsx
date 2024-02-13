@@ -30,9 +30,6 @@ const slugScheduler = {
     'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere',
     'hello fugit, molestiae ab officiis illo voluptates recusandae.',
     'world jsv gcyeaf jahdsb cajhdvbak wdva gdgakga kjhsdas',
-    'i need a job, seriously',
-    'how do these look like in the box?',
-    'askdhask dhaskjdh askjd hakdhaks jdhaskdhaf cdh  kjd hak jsd gajs hdga jhsd'
   ],
   imgSource: 'ngrx.svg',
   github: 'https://github.com/chrisds24/SlugScheduler',

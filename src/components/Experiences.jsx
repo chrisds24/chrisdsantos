@@ -3,9 +3,10 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { Stack } from '@mui/material';
 import { Typography } from '@mui/material';
+import Experience from './Experience';
 
 const exp1 = {
-    name: 'Lead Full Stack Developer',
+    position: 'Lead Full Stack Developer',
     date: 'April 2023 – June 2023',
     company: 'Tech4Good',
     location: 'Santa Cruz, CA',
@@ -23,7 +24,7 @@ const exp1 = {
 };
 
 const exp2 = {
-    name: 'Full Stack Developer',
+    position: 'Full Stack Developer',
     date: 'March 2022 – April 2023',
     company: 'Tech4Good',
     location: 'Santa Cruz, CA',
@@ -68,4 +69,4 @@ function Experiences() {
   );
 }
 
-export default Projects;
+export default Experiences;

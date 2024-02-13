@@ -6,6 +6,7 @@ import MyAppBar from './components/MyAppBar';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
+import Experiences from './components/Experiences';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Experiences />
       </Box>
     </Box>
   );

@@ -28,7 +28,7 @@ function Home() {
             Christian Delos Santos
         </Typography>
         <Typography variant="h4" gutterBottom color="#3b9dff" fontWeight='bold'>
-          Full-stack Developer
+          Full Stack Developer
         </Typography>   
         <Typography variant="h6" gutterBottom color="#ffffff">
           Passionate about building accessible, powerful, and elegant applications to solve problems.

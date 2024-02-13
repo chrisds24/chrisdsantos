@@ -64,6 +64,7 @@ function Project(props) {
         <Card
           elevation={0}
           square={true}
+          sx={{backgroundColor: '#004181'}}
         >
           {/* 
             In https://www.colorhexa.com/00274e, #004181 is a brighter monochromatic color
