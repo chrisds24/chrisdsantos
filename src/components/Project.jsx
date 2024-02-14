@@ -90,8 +90,9 @@ function Project(props) {
                 margin: '0'
               }}
             >
-              {props.project.details.map((detail) => (
+              {props.project.details.map((detail, idx) => (
                 <ListItem
+                  key={idx}
                   sx={{padding: '0.6vh 2vw'}}
                 >
                   <ListItemIcon>

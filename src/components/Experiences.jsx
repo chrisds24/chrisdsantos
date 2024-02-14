@@ -47,6 +47,7 @@ const experiences = [exp1, exp2];
 function Experiences() {
   return (
     <Box
+    //   id={'experience'}
       sx={{
         width: '100vw',
         padding: '7vh 7vw 7vh 7vw',
@@ -61,8 +62,8 @@ function Experiences() {
         Experiences
       </Typography>
       <Stack spacing={'4vh'}>
-        {experiences.map((exp) => (
-          <Experience experience={exp} />
+        {experiences.map((exp, idx) => (
+          <Experience key={idx} experience={exp} />
         ))}
       </Stack>
     </Box>

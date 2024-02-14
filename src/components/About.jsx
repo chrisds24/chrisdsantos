@@ -9,6 +9,7 @@ import Skills from './Skills';
 function About() {
   return (
     <Box
+      // id={'about'}
       sx={{
         width: '100vw',
         padding: '7vh 7vw 7vh 7vw',

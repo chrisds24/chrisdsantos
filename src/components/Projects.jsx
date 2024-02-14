@@ -18,7 +18,7 @@ const slugSell = {
     'askdhask dhaskjdh askjd hakdhaks jdhaskdhaf cdh jsv gcyeaf jahdsb cajhdvbak wdva gdgakga kjhsdas kjd hak jsd gajs hdga jhsd'
   ],
   imgSource: 'render.svg',
-  github: 'https://github.com/chrisds24/SlugSell',
+  // github: 'https://github.com/chrisds24/SlugSell',
   live: 'https://slugsell-webapp.onrender.com',
   stack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeGraphQL', 'Node.js', 'Express', 'PostgreSQL']
 };
@@ -41,6 +41,7 @@ const projects = [slugSell, slugScheduler];
 function Projects() {
   return (
     <Box
+      // id={'projects'}
       sx={{
         width: '100vw',
         padding: '7vh 7vw 7vh 7vw',
@@ -55,8 +56,8 @@ function Projects() {
         Projects
       </Typography>
       <Stack spacing={'4vh'}>
-        {projects.map((proj) => (
-          <Project project={proj} />
+        {projects.map((proj, idx) => (
+          <Project key={idx} project={proj} />
         ))}
       </Stack>
     </Box>

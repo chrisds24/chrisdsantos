@@ -12,9 +12,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 // import Typography from '@mui/material/Typography';
+// import { Link } from '@mui/icons-material';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Projects', 'Experience', 'Contact'];
+const navItems = ['home', 'about', 'projects', 'experience', 'contact'];
 
 function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -45,9 +46,9 @@ function DrawerAppBar() {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} sx={{ color: '#ffffff' }} />
-            </ListItemButton>
+              <ListItemButton sx={{ textAlign: 'center' }} >
+                <ListItemText primary={item} sx={{ color: '#ffffff' }} />
+              </ListItemButton>
           </ListItem>
         ))}
       </List>

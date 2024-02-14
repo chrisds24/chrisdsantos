@@ -26,8 +26,8 @@ function AboutMe() {
             About Me
         </Typography>
         <List>
-          {aboutMeItems.map((item) => (
-            <ListItem>
+          {aboutMeItems.map((item, idx) => (
+            <ListItem key={idx}>
                 <ListItemIcon>
                   <BugReportIcon sx={{ color: '#ffffff' }} />
                 </ListItemIcon>
