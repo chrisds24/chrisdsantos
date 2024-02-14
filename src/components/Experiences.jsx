@@ -59,7 +59,7 @@ function Experiences() {
       }}
     >
       <Typography variant="h4" gutterBottom color='#00274e' fontWeight='bold' sx={{textDecoration: 'underline', paddingBottom: '4vh'}}>
-        Experiences
+        Experience
       </Typography>
       <Stack spacing={'4vh'}>
         {experiences.map((exp, idx) => (
