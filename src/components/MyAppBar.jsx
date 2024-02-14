@@ -13,6 +13,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 // import Typography from '@mui/material/Typography';
 // import { Link } from '@mui/icons-material';
+import Slide from '@mui/material/Slide';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Projects', 'Experience', 'Contact'];
@@ -23,6 +25,8 @@ function DrawerAppBar() {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  const trigger = useScrollTrigger();
 
   const drawer = (
     <Box
@@ -60,50 +64,52 @@ function DrawerAppBar() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar
-        component="nav"
-        sx={{
-            backgroundColor: '#00274e',
-            paddingBottom: 1,
-            paddingTop: 1
-        }}
-        // elevation={0}
-      >
-        <Toolbar>
-          <a href="/#">
-            <Box
-              component="img"
+      <Slide appear={false} direction="down" in={!trigger}>
+        <AppBar
+          component="nav"
+          sx={{
+              backgroundColor: '#00274e',
+              paddingBottom: 1,
+              paddingTop: 1
+          }}
+          // elevation={0}
+        >
+          <Toolbar>
+            <a href="/#">
+              <Box
+                component="img"
+                sx={{
+                    height: 64,
+                    width: 64,
+                }}
+                alt="Letter c image"
+                src="c-image-white.png"
+              />
+            </a>
+            <Box sx={{ display: { xs: 'none', sm: 'block' }, marginLeft: 'auto' }}>
+              {navItems.map((item) => (
+                <Button key={item} sx={{ color: '#ffffff' }} href={`/#${item}`}>
+                  {item}
+                </Button>
+              ))}
+            </Box>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: 'none' }, marginLeft: 'auto' }}
+            >
+              <MenuIcon
               sx={{
-                  height: 64,
-                  width: 64,
+                  height: 48,
+                  width: 48
               }}
-              alt="Letter c image"
-              src="c-image-white.png"
-            />
-          </a>
-          <Box sx={{ display: { xs: 'none', sm: 'block' }, marginLeft: 'auto' }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#ffffff' }} href={`/#${item}`}>
-                {item}
-              </Button>
-            ))}
-          </Box>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' }, marginLeft: 'auto' }}
-          >
-            <MenuIcon
-            sx={{
-                height: 48,
-                width: 48
-            }}
-            />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
+              />
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+      </Slide>
       <nav>
         <Drawer
           container={container}
