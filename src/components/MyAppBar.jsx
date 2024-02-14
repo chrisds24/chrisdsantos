@@ -70,15 +70,17 @@ function DrawerAppBar() {
         // elevation={0}
       >
         <Toolbar>
-          <Box
-            component="img"
-            sx={{
-                height: 64,
-                width: 64,
-            }}
-            alt="Letter c image"
-            src="c-image-white.png"
-          />
+          <a href="/#">
+            <Box
+              component="img"
+              sx={{
+                  height: 64,
+                  width: 64,
+              }}
+              alt="Letter c image"
+              src="c-image-white.png"
+            />
+          </a>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, marginLeft: 'auto' }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#ffffff' }} href={`/#${item}`}>
