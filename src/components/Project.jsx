@@ -41,7 +41,7 @@ function Project(props) {
                   }}
                 >
                   <GitHubIcon sx={{ color: '#ffffff', width: 30, height: 30, paddingRight: 1}} />
-                  {props.project.github ? 'GitHub' : 'Unavailable'}
+                  {props.project.github ? 'Repo' : 'Unavailable'}
                 </Button>
               </Link> 
               <Link href={props.project.live} rel="noopener noreferrer" target="_blank">

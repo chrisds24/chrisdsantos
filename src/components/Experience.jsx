@@ -8,6 +8,8 @@ import { Typography } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
 import { Chip } from '@mui/material';
 import { Grid } from '@mui/material';
+import LinkIcon from '@mui/icons-material/Link';
+import { Link } from '@mui/material';
 
 function Experience(props) {
   return (
@@ -27,7 +29,7 @@ function Experience(props) {
             '&:last-child': {paddingBottom: 0}
           }}
         >
-        <Box sx={{display: 'flex', flexDirection: 'column'}}>
+          <Box sx={{display: 'flex', flexDirection: 'column'}}>
             <Box sx={{display: 'flex', flexDirection: {xs: 'column', md: 'row'}, justifyContent: 'space-between'}}>
                 <Typography variant="string" color='#000000' fontWeight='bold' sx={{fontSize: '23px'}}>
                     {props.experience.position}
@@ -68,14 +70,33 @@ function Experience(props) {
                 </ListItem>
                 ))}
             </List>
-            <Grid rowSpacing={1} columnSpacing={1} container direction='row' sx={{paddingLeft: '2vw', paddingTop: '12px'}}>
+            <Box sx={{ display: 'flex', flexDirection: {xs: 'column', md: 'row'}, alignItems:'center', paddingTop: '12px'}}>
+              <Typography variant="string" color='#00274e' sx={{fontSize: '18px', fontWeight: 'bold'}}>
+                Skills
+              </Typography>
+              <Grid rowSpacing={1} columnSpacing={1} container direction='row' sx={{paddingLeft: '2vw', paddingTop: {xs: '10px', md: '0px'}}}>
                 {props.experience.skills.map((skill, idx) => (
                 <Grid item key={idx}>
                     <Chip label={skill} sx={{backgroundColor: '#3b9dff', color: '#000000', fontWeight: 'bold'}} />
                 </Grid>
                 ))}
-            </Grid>
-        </Box>
+              </Grid>
+            </Box>
+            <Box sx={{ display: 'flex', flexDirection: {xs: 'column', md: 'row'}, alignItems:'center', paddingTop: '12px'}}>
+              <Typography variant="string" color='#00274e' sx={{fontSize: '18px', fontWeight: 'bold'}}>
+                Projects
+              </Typography>
+              <Grid rowSpacing={1} columnSpacing={1} container direction='row' sx={{paddingLeft: '2vw', paddingTop: {xs: '10px', md: '0px'}}}>
+                {props.experience.projects.map((project, idx) => (
+                <Grid item key={idx}>
+                  <Link href={project.live} rel="noopener noreferrer" target="_blank">
+                    <Chip avatar={<LinkIcon sx={{color: '#000000'}} />} label={project.name} sx={{backgroundColor: '#3b9dff', color: '#000000', fontWeight: 'bold', "&:hover": {backgroundColor: '#0884ff', color: '#ffffff'}}} />
+                  </Link>
+                </Grid>
+                ))}
+              </Grid>
+            </Box>
+          </Box>
         </CardContent>
     </Card>
   );
