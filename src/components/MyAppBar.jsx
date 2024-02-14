@@ -15,7 +15,7 @@ import Button from '@mui/material/Button';
 // import { Link } from '@mui/icons-material';
 
 const drawerWidth = 240;
-const navItems = ['home', 'about', 'projects', 'experience', 'contact'];
+const navItems = ['Home', 'About', 'Projects', 'Experience', 'Contact'];
 
 function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -46,7 +46,7 @@ function DrawerAppBar() {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-              <ListItemButton sx={{ textAlign: 'center' }} >
+              <ListItemButton sx={{ textAlign: 'center' }} href={`/#${item}`}>
                 <ListItemText primary={item} sx={{ color: '#ffffff' }} />
               </ListItemButton>
           </ListItem>
@@ -81,7 +81,7 @@ function DrawerAppBar() {
           />
           <Box sx={{ display: { xs: 'none', sm: 'block' }, marginLeft: 'auto' }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#ffffff' }}>
+              <Button key={item} sx={{ color: '#ffffff' }} href={`/#${item}`}>
                 {item}
               </Button>
             ))}

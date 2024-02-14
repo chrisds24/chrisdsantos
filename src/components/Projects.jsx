@@ -41,7 +41,7 @@ const projects = [slugSell, slugScheduler];
 function Projects() {
   return (
     <Box
-      // id={'projects'}
+      id={'Projects'}
       sx={{
         width: '100vw',
         padding: '7vh 7vw 7vh 7vw',

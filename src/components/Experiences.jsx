@@ -47,7 +47,7 @@ const experiences = [exp1, exp2];
 function Experiences() {
   return (
     <Box
-    //   id={'experience'}
+      id={'Experience'}
       sx={{
         width: '100vw',
         padding: '7vh 7vw 7vh 7vw',

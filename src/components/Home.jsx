@@ -7,7 +7,7 @@ import { Avatar } from '@mui/material';
 function Home() {
   return (
     <Box
-      // id={'home'}
+      id={'Home'}
       sx={{
         width: '100vw',
         padding: '17vh 7vw 7vh 7vw',

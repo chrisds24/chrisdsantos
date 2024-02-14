@@ -14,10 +14,10 @@ function App() {
       <CssBaseline />
       <MyAppBar />
       <Box>
-          <Home id={'home'}/>
-          <About id={'about'} />
-          <Projects id={'projects'} />
-          <Experiences id={'experiences'} />
+          <Home/>
+          <About/>
+          <Projects />
+          <Experiences />
       </Box>
     </Box>
   );
