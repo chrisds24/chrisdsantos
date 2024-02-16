@@ -25,11 +25,11 @@ const slugSell = {
 
 const slugScheduler = {
   name: 'SlugScheduler',
-  description: 'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta',
+  description: 'Tool to create and verify UCSC class schedules.',
   details: [
-    'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere',
-    'hello fugit, molestiae ab officiis illo voluptates recusandae.',
-    'world jsv gcyeaf jahdsb cajhdvbak wdva gdgakga kjhsdas',
+    'Selenium and Python to web scrape UCSC classes and requirements',
+    'Save previously created schedules',
+    'Verify a schedule for multiple school years',
   ],
   imgSource: 'slugscheduler-pic.png',
   github: 'https://github.com/chrisds24/SlugScheduler',
