@@ -63,9 +63,9 @@ function Experience(props) {
                     <ListItemText
                       primary={`${detail}`}
                       primaryTypographyProps={{
-                        fontSize: '17px',
+                        fontSize: '18px',
                         color: '#000000',
-                        fontWeight: 'bold'
+                        // fontWeight: 'bold'
                       }} 
                     />
                 </ListItem>

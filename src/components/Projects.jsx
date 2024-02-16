@@ -33,7 +33,7 @@ const slugScheduler = {
   ],
   imgSource: 'slugscheduler-pic.png',
   github: 'https://github.com/chrisds24/SlugScheduler',
-  stack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeGraphQL', 'Node.js', 'Express', 'PostgreSQL']
+  stack: ['JavaScript', 'React', 'Bulma', 'Python', 'FastAPI', 'Selenium', 'PostgreSQL']
 };
 
 const projects = [slugSell, slugScheduler];
