@@ -8,14 +8,14 @@ import Project from './Project';
 
 const slugSell = {
   name: 'SlugSell',
-  description: 'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere, fugit, molestiae ab.',
+  description: 'E-commerce app to make transactions with other users.',
   details: [
-    'Quibusdam temporibus beatae doloremque voluptatum doloribus soluta accusamus porro reprehenderit eos inventore facere, fugit, molestiae ab officiis illo voluptates recusandae.',
-    'hello',
-    'world',
-    'i need a job, seriously',
-    'how do these look like in the box?',
-    'askdhask dhaskjdh askjd hakdhaks jdhaskdhaf cdh jsv gcyeaf jahdsb cajhdvbak wdva gdgakga kjhsdas kjd hak jsd gajs hdga jhsd'
+    'Comprehensive CRUD functionality',
+    'Admin and mod app to edit categories and suspend products/users',
+    'JWT for authentication',
+    'Server-side rendering on certain pages for SEO',
+    'Internationalization (i18n) and localization (l10n)',
+    'Amazon S3 bucket to store images'
   ],
   imgSource: 'slugsell-pic.png',
   // github: 'https://github.com/chrisds24/SlugSell',
