@@ -17,7 +17,7 @@ const slugSell = {
     'how do these look like in the box?',
     'askdhask dhaskjdh askjd hakdhaks jdhaskdhaf cdh jsv gcyeaf jahdsb cajhdvbak wdva gdgakga kjhsdas kjd hak jsd gajs hdga jhsd'
   ],
-  imgSource: 'render.svg',
+  imgSource: 'slugsell-pic.png',
   // github: 'https://github.com/chrisds24/SlugSell',
   live: 'https://slugsell-webapp.onrender.com',
   stack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeGraphQL', 'Node.js', 'Express', 'PostgreSQL']
@@ -31,7 +31,7 @@ const slugScheduler = {
     'hello fugit, molestiae ab officiis illo voluptates recusandae.',
     'world jsv gcyeaf jahdsb cajhdvbak wdva gdgakga kjhsdas',
   ],
-  imgSource: 'ngrx.svg',
+  imgSource: 'slugscheduler-pic.png',
   github: 'https://github.com/chrisds24/SlugScheduler',
   stack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeGraphQL', 'Node.js', 'Express', 'PostgreSQL']
 };
