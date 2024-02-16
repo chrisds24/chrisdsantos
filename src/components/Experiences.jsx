@@ -18,7 +18,7 @@ const exp1 = {
       'Cooperated with UI/UX designers to ensure proper translation of Figma prototypes into user interfaces'
     ],
     projects: [
-        {name: 'ExploreCareers', live: 'https://tech4good.soe.ucsc.edu/#/'}
+        {name: 'ExploreCareers'}
     ],
     skills: ['HTML', 'CSS', 'TypeScript', 'Angular', 'NgRx', 'RxJS', 'Firebase', 'Cloud Firestore', 'Figma']
 };
@@ -35,9 +35,9 @@ const exp2 = {
       'Coordinated with other developers to facilitate the seamless integration of code'
     ],
     projects: [
-        {name: 'Annota V2', live: 'https://tech4good.soe.ucsc.edu/#/'},
-        {name: 'Collectively', live: 'https://tech4good.soe.ucsc.edu/#/'},
-        {name: 'Gratitude', live: 'https://tech4good.soe.ucsc.edu/#/'}
+        {name: 'Annota V2', live: 'https://annota.soe.ucsc.edu/#/'},
+        {name: 'Collectively', live: 'https://collectively.soe.ucsc.edu/#/landing'},
+        {name: 'Gratitude', live: 'https://gratitude.soe.ucsc.edu/#/landing'}
     ],
     skills: ['HTML', 'CSS', 'TypeScript', 'Angular', 'NgRx', 'RxJS', 'Firebase', 'Cloud Firestore', 'Figma']
 };

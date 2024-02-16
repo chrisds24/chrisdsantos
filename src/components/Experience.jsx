@@ -90,9 +90,13 @@ function Experience(props) {
               <Grid rowSpacing={1} columnSpacing={1} container direction='row' sx={{paddingLeft: '2vw', paddingTop: {xs: '10px', md: '0px'}}}>
                 {props.experience.projects.map((project, idx) => (
                 <Grid item key={idx}>
-                  <Link href={project.live} rel="noopener noreferrer" target="_blank">
-                    <Chip avatar={<LinkIcon sx={{color: '#000000'}} />} label={project.name} sx={{backgroundColor: '#3b9dff', color: '#000000', fontWeight: 'bold', "&:hover": {backgroundColor: '#0884ff', color: '#ffffff'}}} />
-                  </Link>
+                  {project.live ? 
+                    <Link href={project.live} rel="noopener noreferrer" target="_blank">
+                      <Chip avatar={<LinkIcon sx={{color: '#000000'}} />} label={project.name} sx={{backgroundColor: '#3b9dff', color: '#000000', fontWeight: 'bold', "&:hover": {backgroundColor: '#0077ee', color: '#ffffff'}}} />
+                    </Link> 
+                    :
+                    <Chip avatar={<LinkIcon sx={{color: '#000000'}} />} label={project.name} sx={{backgroundColor: '#808080', color: '#000000', fontWeight: 'bold', "&:hover": {backgroundColor: '#808080', color: '#000000'}}} />
+                  }
                 </Grid>
                 ))}
               </Grid>

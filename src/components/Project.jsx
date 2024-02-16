@@ -35,13 +35,13 @@ function Project(props) {
                   sx={{
                     color: '#ffffff',
                     backgroundColor: props.project.github ? '#3b9dff': '#808080',
-                    // "&:hover": props.project.github ? '#0000ff': '#808080',
+                    "&:hover": {backgroundColor: props.project.github ? '#0077ee': '#808080'},
                     height: '35px',
                     marginTop: '10px'
                   }}
                 >
                   <GitHubIcon sx={{ color: '#ffffff', width: 30, height: 30, paddingRight: 1}} />
-                  {props.project.github ? 'Repo' : 'Unavailable'}
+                  {props.project.github ? 'Repo' : 'Private'}
                 </Button>
               </Link> 
               <Link href={props.project.live} rel="noopener noreferrer" target="_blank">
@@ -50,7 +50,7 @@ function Project(props) {
                   sx={{
                     color: '#ffffff',
                     backgroundColor: props.project.live ? '#3b9dff': '#808080',
-                    // "&:hover": props.project.github ? '#0000ff': '#808080',
+                    "&:hover": {backgroundColor: props.project.live ? '#0077ee': '#808080'},
                     height: '35px',
                     marginTop: '10px'
                   }}
