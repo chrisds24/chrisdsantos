@@ -45,7 +45,7 @@ function AboutMe() {
             About Me
         </Typography>
         <Card
-          sx={{backgroundColor: '#6eb7ff', padding: '2vh 1vw 0vh 1vw'}}
+          sx={{backgroundColor: '#ffffff', padding: '2vh 1vw 0vh 1vw'}}
           elevation={0}
         >
           {aboutMeItems.map((item, idx) => (
