@@ -5,22 +5,34 @@ import { Stack } from '@mui/material';
 import { Typography } from '@mui/material';
 import Project from './Project';
 
+const qu1cksave = {
+  name: 'qu1cksave',
+  description: 'Manage your job applications and files in one place',
+  details: [
+    'Robust filtering to find your jobs easily',
+    'Cross-browser compatible, fully responsive, and user-friendly UI',
+    'JWT for authentication',
+    'Amazon RDS and Amazon S3 for secure and reliable storage for your jobs and files'
+  ],
+  imgSource: 'track_jobsearch.png',
+  live: 'https://qu1cksave.vercel.app',
+  stack: ['TypeScript', 'React', 'Material UI', 'Next.js', 'Node.js', 'Express', 'PostgreSQL', 'AWS RDS', 'AWS S3']
+};
 
 const slugSell = {
   name: 'SlugSell',
   description: 'E-commerce app to make transactions with other users.',
   details: [
-    'Comprehensive CRUD functionality',
+    'Comprehensive CRUD functionality to view, post, edit, and delete products',
     'Admin and mod app to edit categories and suspend products/users',
-    'JWT for authentication',
-    'Server-side rendering on certain pages for SEO',
-    'Internationalization (i18n) and localization (l10n)',
+    'Server-side rendering on certain pages for improved SEO',
+    'Internationalization (i18n) and localization (l10n) for accessibility',
     'Amazon S3 bucket to store images'
   ],
   imgSource: 'slugsell-pic.png',
   // github: 'https://github.com/chrisds24/SlugSell',
-  live: 'https://slugsell-webapp.onrender.com',
-  stack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeGraphQL', 'Node.js', 'Express', 'PostgreSQL']
+  // live: 'https://slugsell-webapp.onrender.com',
+  stack: ['TypeScript', 'React', 'Tailwind CSS', 'Next.js', 'TypeGraphQL', 'Node.js', 'Express', 'PostgreSQL', 'AWS S3']
 };
 
 const slugScheduler = {
@@ -36,7 +48,7 @@ const slugScheduler = {
   stack: ['JavaScript', 'React', 'Bulma', 'Python', 'FastAPI', 'Selenium', 'PostgreSQL']
 };
 
-const projects = [slugSell, slugScheduler];
+const projects = [qu1cksave, slugSell, slugScheduler];
 
 function Projects() {
   return (

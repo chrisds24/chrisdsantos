@@ -6,16 +6,30 @@ import { Typography } from '@mui/material';
 import Experience from './Experience';
 
 const exp1 = {
+  position: 'Freelance AI Trainer',
+  date: 'May 2024 – Present',
+  company: 'Data Annotation Tech',
+  location: 'Remote',
+  details: [
+    'Create coding prompts and grade responses used to train large language models (LLMs) using JavaScript, React, and Python, allowing generative AI to produce more accurate and helpful coding related content',
+  ],
+  projects: [
+      {name: 'N/A'}
+  ],
+  skills: ['JavaScript', 'React', 'Python']
+};
+
+const exp2 = {
     position: 'Lead Full Stack Developer',
     date: 'April 2023 – June 2023',
     company: 'Tech4Good',
     location: 'Santa Cruz, CA',
     details: [
-      'Guided a team of 9 developers who created over 10 web pages for a user-centered web application',
-      'Onboarded new team members by guiding them through the complex codebase, teaching them relevant concepts, and demonstrating coding best practices',
-      'Boosted team productivity by providing mentorship, which helped the team achieve its goals 3 weeks early',
-      'Ensured production-level code by evaluating pull requests and conducting code reviews to enhance code quality',
-      'Cooperated with UI/UX designers to ensure proper translation of Figma prototypes into user interfaces'
+      'Guided a team of 9 developers who created over 10 dynamic web pages for a user-centered web application',
+      'Spearheaded the skill development of novice developers and new team members by providing mentorship',
+      'Enforced adherence to software development best practices by evaluating pull requests and conducting code reviews',
+      'Cooperated with UI/UX designers to ensure accurate translation of Figma designs into user interfaces',
+      'Designed a NoSQL data model to be used for a cloud-hosted non-relational database called Cloud Firestore'
     ],
     projects: [
         {name: 'ExploreCareers'}
@@ -23,16 +37,15 @@ const exp1 = {
     skills: ['HTML', 'CSS', 'TypeScript', 'Angular', 'NgRx', 'RxJS', 'Firebase', 'Cloud Firestore', 'Figma']
 };
 
-const exp2 = {
+const exp3 = {
     position: 'Full Stack Developer',
     date: 'March 2022 – April 2023',
     company: 'Tech4Good',
     location: 'Santa Cruz, CA',
     details: [
-      'Utilized HTML, CSS, TypeScript, Angular, NgRx, and RxJS to create components for web pages that asynchronously retrieve and store data in a NoSQL cloud database called Cloud Firestore',
-      'Consulted with team leads to guarantee valid translation of Figma designs into high-quality code',
-      'Validated the correctness of the application by thoroughly testing it with different inputs and edge cases',
-      'Coordinated with other developers to facilitate the seamless integration of code'
+      'Developed frontend components using HTML, SCSS, TypeScript, and Angular for 3 social computing projects utilizing a Firebase backend',
+      'Exercised a responsive web design (RWD) approach, ensured cross-browser compatibility, and performed manual testing to create high-quality software that is used by a university class of 100+ students',
+      'Coordinated and consulted with team leads for feedback, improving code quality and reducing technical debt'
     ],
     projects: [
         {name: 'Annota V2', live: 'https://annota.soe.ucsc.edu/#/'},
@@ -42,7 +55,7 @@ const exp2 = {
     skills: ['HTML', 'CSS', 'TypeScript', 'Angular', 'NgRx', 'RxJS', 'Firebase', 'Cloud Firestore', 'Figma']
 };
 
-const experiences = [exp1, exp2];
+const experiences = [exp1, exp2, exp3];
 
 function Experiences() {
   return (

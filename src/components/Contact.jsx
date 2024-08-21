@@ -41,7 +41,7 @@ function Contact() {
             <Link href={'https://www.linkedin.com/in/christiandelossantos24/'} rel="noopener noreferrer" target="_blank">
                 <LinkedInIcon fontSize={'large'} sx={{ color: '#ffffff', paddingRight: 1}} />
             </Link>
-            <Link href={'mailto:chris_d.santos@yahoo.com'} rel="noopener noreferrer" target="_blank">
+            <Link href={'mailto:chdeloss24@gmail.com'} rel="noopener noreferrer" target="_blank">
                 <EmailIcon fontSize={'large'} sx={{ color: '#ffffff', paddingRight: 1}} />
             </Link>            
           </Stack>
