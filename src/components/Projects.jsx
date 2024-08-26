@@ -15,7 +15,7 @@ const qu1cksave = {
     'Amazon RDS and Amazon S3 for secure and reliable storage for your jobs and files'
   ],
   imgSource: 'track_jobsearch.png',
-  live: 'https://qu1cksave.vercel.app',
+  live: 'https://qu1cksave.com',
   stack: ['TypeScript', 'React', 'Material UI', 'Next.js', 'Node.js', 'Express', 'PostgreSQL', 'AWS RDS', 'AWS S3']
 };
 
